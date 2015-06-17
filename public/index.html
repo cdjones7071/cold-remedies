@@ -5,12 +5,40 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+    <div class="homepage">
+         <div id="left"></div>
+         <div id="right"></div>
+    </div>
+    
+<template id ="left-side">
+  <div class="name active">
+   <div class="name">{{ name }}</div>
+      <div class="hide">
+       <div class="Range">Effectiveness of treatment  :{{ treatment }}</div>
+       <div class="helpers">Level of Prevention   :{{ prevention }}</div>
+       <div class="value-title">Usefulness</div>
+       <div class="value">{{ description }}</div>
+       <div class="SideEffects-title">Side Effects</div>
+       <div class="reactions">{{ reactions }}</div>
+      </div>
+    </div>
+
+
+</template>
+
+<template id ="right-side">
+
+</template>
+
+
 
   <script src="libs/jquery.js"></script>
   <script src="libs/handlebars.js"></script>
   <script src="libs/underscore.js"></script>
 
+  <script src="public/remedies.js"></script>
   <script src="index.js"></script>
+  
 
 </body>
 </html>
