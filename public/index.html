@@ -11,11 +11,11 @@
     </div>
     
 <template id ="left-side">
-  <div class="name active">
-   <div class="name">{{ name }}</div>
-      <div class="hide">
+  <div class="starter">
+   <div class="name active">{{ name }}</div>
+      <div class="holder hide">
        <div class="Range">Effectiveness of treatment  :{{ treatment }}</div>
-       <div class="helpers">Level of Prevention   :{{ prevention }}</div>
+       <div class="helpers">Level of Prevention   :<span id="prevention">{{ prevention }}</span></div>
        <div class="value-title">Usefulness</div>
        <div class="value">{{ description }}</div>
        <div class="SideEffects-title">Side Effects</div>

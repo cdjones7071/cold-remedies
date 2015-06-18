@@ -59,7 +59,7 @@ width: 100%;
 	color:black;
 	text-align: center;
 }
-.hide.active #left  {
+.active .name{
 	height: 100px;
 }
 .highlight   
