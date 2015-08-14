@@ -1,66 +1,32 @@
-$(document).on("ready", function(){
-
-	$(".name").on("click", function(){
-     $(".name").toggle("active")
-    // $(this).addClass("active")
-     //$(this).highlight("active")
-})
-
-//$(".name").hover(function() {               
-     // $(this).addClass('highlight');  
-   //}, function() {  
-   //   $(this).removeClass('highlight');  
- //})
 
 
-//var templateremedy = Handlebars.compile($("#right-side").html() )
-	
-	//$.ajax({
-	 // url: "/remedy",
-	 // method: "GET",
-	 // data: {
-	  //},
-	  //success: function(remedies) {
-	  //	var htmlString = templateremedy(remedies)
-	  //	$("#right").append( htmlString )
-	 // }
-      
-	//})
+$(document).on("ready", function() {
 
-    var templateleft = Handlebars.compile( $("#left-side").html() )
-   
-   	$.ajax({
-	  url: "/remedy",
-	  method: "GET",
-	  data: {
+	var coldRemedyFunction = Handlebars.compile( $("#coldRemediesTemplate").html() )
 
-	  },
-	  success: function(data) { 
-	  	_.each(data.remedies, function(data){
-	  	console.log(data)
-	  	var htmlString = templateleft(data)
-	  		$("#left").append( htmlString )
-	  	})
+	$.ajax({
 
-	  var $prev = $("#prevention").text()
-      if ($prev = '0') {
-    	$prev.text("not good")
-    }
-	  		
-	 }
- 
-    })
+		url: "/remedy",
+		method: "GET",
+		data: {},
+		success: function(data) {
 
-$(".holder").hide();
-$(".active").show();
+			_.each(data, function(id) {
 
-$(".name").click(function(){
-$(".holder").slideToggle(".hide");
- }) 
+				_.each(id, function(remedy) {
+					var htmlString = coldRemedyFunction(remedy)
+
+					console.log(htmlString)
+
+					$(".listOfRemedies").append(htmlString)
+				})
+				
+
+			})
+
+				
+		}
+
+	})
 
 })
-
-
-
-
-

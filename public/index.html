@@ -1,44 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Cold Remedies List</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-<body>
-    <div class="homepage">
-         <div id="left"></div>
-         <div id="right"></div>
-    </div>
-    
-<template id ="left-side">
-  <div class="starter">
-   <div class="name active">{{ name }}</div>
-      <div class="holder hide">
-       <div class="Range">Effectiveness of treatment  :{{ treatment }}</div>
-       <div class="helpers">Level of Prevention   :<span id="prevention">{{ prevention }}</span></div>
-       <div class="value-title">Usefulness</div>
-       <div class="value">{{ description }}</div>
-       <div class="SideEffects-title">Side Effects</div>
-       <div class="reactions">{{ reactions }}</div>
-      </div>
-    </div>
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Cold Remedies List</title>
+   <link rel="stylesheet" href="index.css" />
+ </head>
+ <body>
+ 
+ <div class="listOfRemedies">
+
+ </div>
 
 
-</template>
+<!-- Start of Template -->
+ <template id="coldRemediesTemplate">
+   
+   <div class="remedy">
+     <span class="name content"><b>Name:</b> {{name}}</span>
 
-<template id ="right-side">
+     <span class="treatment content"><b>Treatment:</b> {{treatment}}</span>
 
-</template>
+     <span class="prevention content"><b>Prevention:</b> {{prevention}}</span>
 
+     <span class="description content"><b>Description:</b> {{description}}</span>
 
+     <span class="reactions content"><b>Reactions:</b> {{reactions}}</span>
 
-  <script src="libs/jquery.js"></script>
-  <script src="libs/handlebars.js"></script>
-  <script src="libs/underscore.js"></script>
+   </div> 
 
-  <script src="public/remedies.js"></script>
-  <script src="index.js"></script>
-  
+ </template>
 
-</body>
-</html>
+   <script src="libs/jquery.js"></script>
+   <script src="libs/handlebars.js"></script>
+   <script src="libs/underscore.js"></script>
+ 
+   <script src="remedies.js"></script>
+   <script src="index.js"></script>
+
+ 
+ </body>
+ </html>

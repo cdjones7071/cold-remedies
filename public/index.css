@@ -1,74 +1,25 @@
-*{
+/* Stylesheet stuff goes here, obvi */
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-.homepage{
-	height:100vh;
-}
-#left-side{
-height: 100vh;
-width: 100%;
 
+.listOfRemedies {
+	display: inline-block;
+	font-family: Helvetica;
 }
-.name{
-	font-weight: bold;
-	font-size: 26px;
-	height: 13vh;
-	color:green;
-	border: solid 1px #00c6d6;
-	
-}
-.Range{
-	color: red;
-	font-size: 18px;
-	position: relative;
-	bottom: 26px;
-	left: 300px;
-}
-.helpers{
-	color: red;
-	font-size: 18px;
-	position: relative;
-	bottom: 26px;
-	left: 300px;
-}
-.value{
-	font-size:16px;
-	color:black;
-	text-align: center; 
-}
-#left{
-	height: 100vh;
 
+.remedy {
+	padding: 5px;
+	margin: 10px 0px;
 }
-.value-title{
-	color: green;
-	font-size: 30px;
-	position: relative;
-	left:570px;
+
+.content {
+	display: block;
+	margin: 3px 0px;
 }
-.SideEffects-title{
-	color: green;
-	font-size: 30px;
-	position: relative;
-	left:570px;
-}
-.reactions{
-	font-size:16px;
-	color:black;
-	text-align: center;
-}
-.active .name{
-	height: 100px;
-}
-.highlight   
-{    
-   background-color: #00DAEC;   
-   color: green;   
+
+.name {
+	font-size: 20px;
 } 
-.hide{
-  height: 0px;
-  transition: height 1s;
-  overflow: hidden;
-}
