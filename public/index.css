@@ -1,25 +1,52 @@
-/* Stylesheet stuff goes here, obvi */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing: border-box
 }
 
-.listOfRemedies {
+body{
+	margin:40px;
+}
+
+#cold-rem{
+	margin:20px;
+	width:76%;
 	display: inline-block;
-	font-family: Helvetica;
+	position: relative;
 }
 
-.remedy {
-	padding: 5px;
-	margin: 10px 0px;
+#listOfRemedies{
+	margin:70px;
+	padding:30px;
+	margin-bottom: 80px;
+	position:relative;
+	background-color:#FEFEFE;
+	border:2px solid black;
+}
+.description{
+	display:none;
+	width:40%;
 }
 
-.content {
-	display: block;
-	margin: 3px 0px;
+.description.active{
+	position: relative;
+	left: 35%;
+	width: 70%;
+	display:inline-block;
+	margin:70px;
+	padding:30px;
+	margin-bottom: 80px;
+	position:relative;
+	background-color:#FEFEFE;
+	border:2px solid black;
 }
 
-.name {
-	font-size: 20px;
-} 
+
+.name{
+	font-size:30px;
+}
+
+.rememdy{
+	display: inline-block;
+	background-color: #FEFEFE;
+}

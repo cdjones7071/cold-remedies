@@ -6,34 +6,36 @@
  </head>
  <body>
  
- <div class="listOfRemedies">
+ 
 
+ <div id="cold-rem"></div>
+
+<div class ="container">
+    <template id="coldRemediesTemplate">
+       <div id = "listOfRemedies">
+       <div class="remedy">
+          <span class="name content"><b>Name:</b> {{name}}</span>
+
+          <span class="treatment content"><b>Treatment:</b> {{treatment}}</span>
+
+          <span class="prevention content"><b>Prevention:</b> {{prevention}}</span>
+
+          <span class="description content"><b>Description:</b> {{description}}</span>
+
+          <span class="reactions content"><b>Reactions:</b> {{reactions}}</span>
+
+     </div> 
+     </div>
+
+        </template>
  </div>
-
-
-<!-- Start of Template -->
- <template id="coldRemediesTemplate">
-   
-   <div class="remedy">
-     <span class="name content"><b>Name:</b> {{name}}</span>
-
-     <span class="treatment content"><b>Treatment:</b> {{treatment}}</span>
-
-     <span class="prevention content"><b>Prevention:</b> {{prevention}}</span>
-
-     <span class="description content"><b>Description:</b> {{description}}</span>
-
-     <span class="reactions content"><b>Reactions:</b> {{reactions}}</span>
-
-   </div> 
-
- </template>
 
    <script src="libs/jquery.js"></script>
    <script src="libs/handlebars.js"></script>
    <script src="libs/underscore.js"></script>
- 
    <script src="remedies.js"></script>
+ 
+
    <script src="index.js"></script>
 
  
